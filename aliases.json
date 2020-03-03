@@ -1,0 +1,6 @@
+[
+	{
+		"alias":"wip",
+		"command":"!git add -u && git commit -m \"WIP\""
+	}
+]
