@@ -18,5 +18,9 @@
 	{
 		"alias":"nub",
 		"command":"\"!f() { git checkout master && git fup && git checkout -b ${1-master}; }; f\""
+	},
+	{
+		"alias":"cap",
+		"command":"git add . && git commit --amend --no-edit && git push -f"
 	}
 ]
