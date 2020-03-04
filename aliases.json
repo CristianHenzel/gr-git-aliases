@@ -13,10 +13,10 @@
 	},
 	{
 		"alias":"bcl",
-		"command":"!git branch --merged master | grep -v \"master$\" | xargs -n 1 git branch -d"
+		"command":"!git checkout master && git branch --merged master | grep -v \"master$\" | xargs -n 1 git branch -d"
 	},
 	{
 		"alias":"nub",
-		"command":"!f() { git checkout master && git fup && git checkout -b ${1-master}; }; f"
+		"command":"\"!f() { git checkout master && git fup && git checkout -b ${1-master}; }; f\""
 	}
 ]
