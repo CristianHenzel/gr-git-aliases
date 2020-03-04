@@ -21,6 +21,6 @@
 	},
 	{
 		"alias":"cap",
-		"command":"git add . && git commit --amend --no-edit && git push -f"
+		"command":"!git add . && git commit --amend --no-edit && git push -f"
 	}
 ]
