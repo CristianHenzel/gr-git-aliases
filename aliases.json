@@ -2,5 +2,21 @@
 	{
 		"alias":"wip",
 		"command":"!git add -u && git commit -m \"WIP\""
+	},
+	{
+		"alias":"undo",
+		"command":"reset HEAD~1 --mixed"
+	},
+	{
+		"alias":"fup",
+		"command":"!git pull upstream master && git push"
+	},
+	{
+		"alias":"bcl",
+		"command":"!git branch --merged master | grep -v \"master$\" | xargs -n 1 git branch -d"
+	},
+	{
+		"alias":"nub",
+		"command":"!f() { git checkout master && git fup && git checkout -b ${1-master}; }; f"
 	}
 ]
